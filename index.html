@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>MILITARY PT TRACKER</title>
+</head>
+<body>
+    <h1>Military PT Tracker</h1>
+        <div class="pt-calculator">
+             <form name="calculator">
+                 <p>
+                Two-mile timed run :
+                <input type="text" onfocus="this.value=''" id="input" placeholder="Enter run time" />
+                <input type="button" id="button" value="ENTER" onclick="calculateScore()"/>
+                </p>
+                <p>
+                Two minute timed :
+                <input type="text" onfocus="this.value=''" id="input2" placeholder="Enter push-ups" />
+                <input type="button" id="button" value="ENTER" onclick="calculateScore2()"/>
+                </p>
+                <p>
+                 Two minute timed :
+                <input type="text" onfocus="this.value=''" id="input3" placeholder="Enter sit-ups" />
+                <input type="button" id="button" value="ENTER" onclick="calculateScore3()" />
+                </p>
+                <p id ="result"> My Run score is : <span id="wynik" ></span> </p>
+                <p id ="result"> My push-up score is : <span id="wynik2"></span> </p>
+                <p id ="result"> My sit-up score is : <span id="wynik3"></span> </p>
+                </p>   
+            </form>
+        </div>
+</body>
+
+<script src="app.js"></script>
+</html>
